@@ -34,7 +34,7 @@ console.log(store.getState());
 
 
 ReactDOM.render(
-    <Provider>
+    <Provider store={store}>
         <App />
     </Provider>, document.getElementById('root'));
 registerServiceWorker();
