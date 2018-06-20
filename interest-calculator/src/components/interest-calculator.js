@@ -43,7 +43,7 @@ const mapStateToProps = state => ({
     principal: state.principal,
     interest: state.interest,
     years: state.years,
-    total: state.total
+    total: state.principal * Math.pow(1 + state.interest / 100, state.years)
 })
 
 export default connect(mapStateToProps)(InterestCalculator);
